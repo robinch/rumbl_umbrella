@@ -38,7 +38,8 @@ defmodule Rumbl.MixProject do
     [
       {:ecto_sql, "~> 3.1"},
       {:postgrex, ">= 0.0.0"},
-      {:pbkdf2_elixir, "~> 1.2"}
+      {:pbkdf2_elixir, "~> 1.2"},
+      {:info_sys, in_umbrella: true}
     ]
   end
 

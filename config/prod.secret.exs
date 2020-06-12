@@ -23,6 +23,14 @@ secret_key_base =
     You can generate one by calling: mix phx.gen.secret
     """
 
+wolfram_app_id =
+  System.get_env("WOLFRAM_APP_ID") ||
+    raise """
+    environment variable WOLFRAM_APP_ID is missing.
+    """
+
+config :info_sys, :wolfram, app_id: wolfram_app_id
+
 config :rumbl_web, RumblWeb.Endpoint,
   http: [
     port: String.to_integer(System.get_env("PORT") || "4000"),
