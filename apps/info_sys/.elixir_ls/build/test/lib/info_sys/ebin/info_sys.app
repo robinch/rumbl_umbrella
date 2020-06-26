@@ -1,8 +1,10 @@
 {application,info_sys,
-             [{applications,[kernel,stdlib,elixir,logger]},
+             [{applications,[kernel,stdlib,elixir,logger,sweet_xml]},
               {description,"info_sys"},
               {modules,['Elixir.InfoSys','Elixir.InfoSys.Application',
-                        'Elixir.InfoSys.Counter']},
+                        'Elixir.InfoSys.Backend','Elixir.InfoSys.Cache',
+                        'Elixir.InfoSys.Counter','Elixir.InfoSys.Result',
+                        'Elixir.InfoSys.Wolfram']},
               {registered,[]},
               {vsn,"0.1.0"},
               {mod,{'Elixir.InfoSys.Application',[]}}]}.

@@ -36,7 +36,7 @@ defmodule Rumbl.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:ecto_sql, "~> 3.1"},
+      {:ecto_sql, "~> 3.4"},
       {:postgrex, ">= 0.0.0"},
       {:pbkdf2_elixir, "~> 1.2"},
       {:info_sys, in_umbrella: true}
